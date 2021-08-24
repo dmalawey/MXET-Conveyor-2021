@@ -13,8 +13,10 @@
         "name": "",
         "topic": "dm/1002/r",
         "qos": "2",
-        "datatype": "utf8",
+        "datatype": "auto",
         "broker": "61142ee0.206dd",
+        "nl": false,
+        "rap": false,
         "x": 160,
         "y": 80,
         "wires": [
@@ -31,14 +33,16 @@
         "name": "",
         "topic": "dm/1002/g",
         "qos": "2",
-        "datatype": "utf8",
+        "datatype": "auto",
         "broker": "61142ee0.206dd",
+        "nl": false,
+        "rap": false,
         "x": 160,
         "y": 120,
         "wires": [
             [
                 "95199eba.61b4f",
-                "7ae373cd.5f4d9c"
+                "3b60288e6a5eb25e"
             ]
         ]
     },
@@ -49,14 +53,16 @@
         "name": "",
         "topic": "dm/1002/b",
         "qos": "2",
-        "datatype": "utf8",
+        "datatype": "auto",
         "broker": "61142ee0.206dd",
+        "nl": false,
+        "rap": false,
         "x": 160,
         "y": 160,
         "wires": [
             [
                 "64808a8b.bbda04",
-                "7ae373cd.5f4d9c"
+                "0d2841a5efa726d1"
             ]
         ]
     },
@@ -111,10 +117,10 @@
         "width": 4,
         "height": "3",
         "name": "green",
-        "label": "red",
-        "colorHi": "#3adb00",
-        "colorWarn": "#7cee6d",
-        "colorNormal": "#dfffdb",
+        "label": "green",
+        "colorHi": "#2ca201",
+        "colorWarn": "#49c039",
+        "colorNormal": "#8de382",
         "colorOff": "#f0fff3",
         "min": "0",
         "max": "255",
@@ -153,7 +159,7 @@
         "width": 4,
         "height": "3",
         "name": "blue",
-        "label": "red",
+        "label": "blue",
         "colorHi": "#0011ff",
         "colorWarn": "#4d4fff",
         "colorNormal": "#8f91ff",
@@ -237,7 +243,7 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 350,
+        "x": 330,
         "y": 240,
         "wires": [
             [
@@ -291,6 +297,9 @@
         "func": "msg.payload = \"rgb(\" + msg.payload + \")\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 470,
         "y": 240,
         "wires": [
@@ -315,9 +324,56 @@
         "wires": []
     },
     {
+        "id": "3b60288e6a5eb25e",
+        "type": "delay",
+        "z": "58d5675e.313148",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "7ae373cd.5f4d9c"
+            ]
+        ]
+    },
+    {
+        "id": "0d2841a5efa726d1",
+        "type": "delay",
+        "z": "58d5675e.313148",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "7ae373cd.5f4d9c"
+            ]
+        ]
+    },
+    {
         "id": "61142ee0.206dd",
         "type": "mqtt-broker",
-        "z": "",
         "name": "hiveMQ",
         "broker": "broker.hivemq.com",
         "port": "1883",
@@ -339,7 +395,6 @@
     {
         "id": "58636665.acad88",
         "type": "ui_group",
-        "z": "",
         "name": "MXET400",
         "tab": "9a005616.1ff428",
         "order": 1,
@@ -350,7 +405,6 @@
     {
         "id": "9a005616.1ff428",
         "type": "ui_tab",
-        "z": "",
         "name": "MXET IoT",
         "icon": "dashboard",
         "order": 1,
