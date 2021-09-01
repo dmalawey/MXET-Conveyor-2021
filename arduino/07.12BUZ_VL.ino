@@ -19,12 +19,15 @@ void setup() {
   pinMode(D4, OUTPUT);        // set up output pin: D4 = 17 = GPIO2
 }
 
+// THIS LOOP RUNS AROUND 50HZ
 void loop() {
   myDist = vlDist();          // take a reading (mm)
-  digitalWrite(D4,LOW);       // reset output
+  digitalWrite(D4,LOW);       // reset output pin
+  
   if (myDist !=0) {           // out-of-range returns zeros
     if (myDist <= trigger){   // if the obstacle is detected
     flag1 = HIGH;}}           // raise the flag for object detection
+  
   if (flag1 == HIGH){         // if the flag is raised
     digitalWrite(D4, HIGH);   // raise the output pin
     bzChirp(49);              // emit a chirp from buzzer
