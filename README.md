@@ -1,7 +1,7 @@
 # MXET-Conveyor-2021
 
 ## Video demo:
-[![MXET 400 Conveyor Demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1631050774/video_to_markdown/images/youtube--ZBGswS26Dy4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/ZBGswS26Dy4 "MXET 400 Conveyor Demo")
+[![MXET 400 Conveyor Demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1631050774/video_to_markdown/images/youtube--ZBGswS26Dy4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/ZBGswS26Dy4 "MXET 400 Conveyor Demo")<br/>
 Thanks to [video-to-markdown](https://video-to-markdown.netlify.app/) for the simple video embed tool.
 
 ## CAD models:
