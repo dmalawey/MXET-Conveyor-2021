@@ -1,7 +1,7 @@
 # MXET-Conveyor-2021
 
 ## Video demo:
-[![SCUTTLE video](https://res.cloudinary.com/marcomontalbano/image/upload/v1631050339/video_to_markdown/images/youtube--vh2ndeOi1dM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/vh2ndeOi1dM "SCUTTLE video")
+[![MXET 400 Conveyor Demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1631050774/video_to_markdown/images/youtube--ZBGswS26Dy4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/ZBGswS26Dy4 "MXET 400 Conveyor Demo")
 
 ## CAD models:
 Download 3d printed models and assemblies from GrabCAD: <br/>
